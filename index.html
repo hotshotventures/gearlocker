@@ -402,7 +402,7 @@
   <script>
     // ── INVENTORY — update these numbers each batch ──
     const INVENTORY = { navy: 30, camo: 30 };
-    const qty = { navy: 30, camo: 30 };
+    const qty = { navy: 0, camo: 0 };
     const PRICE = 22;
     let waitlistHat = '';
 
@@ -510,7 +510,7 @@
       }).catch(() => {});
 
       document.getElementById('success-msg').textContent =
-        `Order placed for ${orderDesc.join(' + ')} (${orderDesc.length > 1 ? qty.navy + qty.camo + ' hats' : '1 hat'} · $${total}), ${nameVal}. We'll text you at ${document.getElementById('phone').value.trim()} to confirm.`;
+        `Order placed for ${orderDesc.join(' + ')} (${orderDesc.length > 1 ? qty.navy + qty.camo + ' hats' : '1 hat'} · $${total}), ${firstNameVal}. We'll text you at ${document.getElementById('phone').value.trim()} to confirm.`;
       document.getElementById('venmo-link').textContent = `Pay $${total} on Venmo`;
       document.getElementById('order-form-wrap').style.display = 'none';
       document.getElementById('success-screen').style.display = 'block';
