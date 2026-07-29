@@ -1,39 +1,564 @@
-STATION 7'S GEARLOCKER
-CAMP PENDLETON
-🔥 FIRE SALE 🔥
-Unofficially the Department's Official Hat. And it's MI-109 Compliant, we checked 👀
-NAVY BLUE
-–
-One Size
-CAMO
-–
-One Size
-MELIN STYLE
-Coming Soon
-New Drop
-CHOOSE YOUR HATS
-🧢
 
-NAVY BLUE
-$22 · One Size
-−
-0
-+
-🧢
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Station 7's Gearlocker</title>
+  <meta property="og:title" content="Station 7's Gearlocker" />
+  <meta property="og:description" content="Unofficially the Department's Official Hat. MI-109 Compliant, we checked. $25 each." />
+  <meta property="og:image" content="https://thegearlocker.netlify.app/og-image.jpg" />
+  <meta property="og:url" content="https://thegearlocker.netlify.app" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Station 7's Gearlocker" />
+  <meta name="twitter:description" content="Unofficially the Department's Official Hat. MI-109 Compliant, we checked. $25 each." />
+  <meta name="twitter:image" content="https://thegearlocker.netlify.app/og-image.jpg" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap');
 
-CAMO
-$22 · One Size
-−
-0
-+
-YOUR INFO
-First Name
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-Last Name
+    :root {
+      --navy:  #0B1F3A;
+      --steel: #1E3A5F;
+      --sand:  #C8A96E;
+      --ash:   #F2F0ED;
+      --smoke: #8A9BAE;
+      --white: #FFFFFF;
+      --danger:#C0392B;
+    }
 
-Phone Number
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--ash); color: var(--navy); min-height: 100vh; }
 
-Notes (optional)
-PLACE ORDER
-You'll get a text confirmation. Payment via Venmo.
-Station 7's Gearlocker · Camp Pendleton · All sales support the station chow fund
+    /* HEADER */
+    header {
+      background: var(--navy); padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; border-bottom: 3px solid var(--sand);
+    }
+    .logo-text {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+      font-size: 1.4rem; letter-spacing: 0.08em; color: var(--white); text-transform: uppercase;
+    }
+    .logo-text span { color: var(--sand); }
+    .badge {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy);
+      background: var(--sand); padding: 4px 10px; border-radius: 2px;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--navy); padding: 56px 24px 48px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+      background: repeating-linear-gradient(90deg, var(--sand) 0px, var(--sand) 20px, transparent 20px, transparent 28px);
+    }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+      font-size: clamp(2.4rem, 8vw, 4rem); color: var(--white);
+      text-transform: uppercase; line-height: 1; letter-spacing: 0.04em; margin-bottom: 16px;
+    }
+    .hero h1 em { font-style: normal; color: var(--sand); }
+    .hero-sub { font-size: 0.95rem; color: var(--smoke); max-width: 380px; margin: 0 auto; line-height: 1.6; }
+
+    /* INVENTORY STRIP */
+    .inventory-strip {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+      padding: 24px 24px 20px; background: var(--steel);
+    }
+    .inv-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(200,169,110,0.25);
+      border-radius: 4px; padding: 10px 20px; text-align: center; min-width: 130px;
+    }
+    .inv-label {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.15em; text-transform: uppercase; color: var(--smoke); margin-bottom: 4px;
+    }
+    .inv-count { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 900; color: var(--sand); line-height: 1; }
+    .inv-style { font-size: 0.72rem; color: var(--smoke); margin-top: 2px; }
+
+    /* MAIN */
+    main { max-width: 560px; margin: 0 auto; padding: 40px 20px 80px; }
+
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--smoke);
+      margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: #D5D0C8; }
+
+    /* HAT CARDS */
+    .hat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 8px; }
+
+    .hat-card {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      padding: 20px 12px 16px; border: 2px solid #D5D0C8; border-radius: 6px;
+      background: var(--white); transition: border-color 0.15s, box-shadow 0.15s; text-align: center;
+      position: relative;
+    }
+    .hat-card.has-qty { border-color: var(--sand); box-shadow: 0 0 0 3px rgba(200,169,110,0.2); }
+    .hat-card.sold-out { opacity: 0.6; background: #F8F6F3; }
+
+    .sold-out-badge {
+      position: absolute; top: 10px; right: 10px;
+      background: var(--danger); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 3px 8px; border-radius: 2px;
+    }
+
+    .hat-icon { font-size: 2.4rem; line-height: 1; }
+    .hat-name {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy);
+    }
+    .hat-price { font-size: 0.85rem; color: var(--smoke); font-weight: 500; }
+    .hat-swatch { width: 28px; height: 14px; border-radius: 2px; border: 1px solid rgba(0,0,0,0.15); }
+
+    /* Qty stepper */
+    .qty-stepper {
+      display: flex; align-items: center; border: 2px solid #D5D0C8;
+      border-radius: 4px; overflow: hidden; margin-top: 4px;
+    }
+    .qty-btn {
+      width: 34px; height: 34px; border: none; background: var(--ash); color: var(--navy);
+      font-size: 1.2rem; font-weight: 700; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: background 0.1s; flex-shrink: 0;
+    }
+    .qty-btn:hover { background: #E0DBD2; }
+    .qty-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+    .qty-display {
+      width: 38px; text-align: center; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.15rem; font-weight: 700; color: var(--navy);
+      border-left: 1px solid #D5D0C8; border-right: 1px solid #D5D0C8; line-height: 34px;
+    }
+
+    /* Notify me button */
+    .notify-btn {
+      width: 100%; margin-top: 6px; padding: 9px 8px;
+      background: transparent; border: 2px solid var(--sand); border-radius: 4px;
+      color: var(--sand); font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.15s, color 0.15s;
+    }
+    .notify-btn:hover { background: var(--sand); color: var(--navy); }
+
+    /* Waitlist modal overlay */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(11,31,58,0.7); z-index: 100;
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--white); border-radius: 8px; padding: 32px 24px;
+      width: 100%; max-width: 380px; text-align: center;
+    }
+    .modal h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.6rem;
+      text-transform: uppercase; color: var(--navy); margin-bottom: 8px; letter-spacing: 0.04em;
+    }
+    .modal p { font-size: 0.88rem; color: var(--smoke); margin-bottom: 20px; line-height: 1.5; }
+    .modal-hat-label {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.9rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--sand); margin-bottom: 16px;
+    }
+    .modal input {
+      width: 100%; padding: 12px 14px; border: 2px solid #D5D0C8; border-radius: 5px;
+      font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--navy);
+      margin-bottom: 12px; -webkit-appearance: none;
+    }
+    .modal input:focus { outline: none; border-color: var(--sand); }
+    .modal-submit {
+      width: 100%; padding: 14px; background: var(--navy); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem;
+      letter-spacing: 0.1em; text-transform: uppercase; border: none; border-radius: 5px;
+      cursor: pointer; border-bottom: 3px solid var(--sand); transition: background 0.15s;
+    }
+    .modal-submit:hover { background: var(--steel); }
+    .modal-cancel {
+      margin-top: 10px; background: none; border: none; color: var(--smoke);
+      font-size: 0.82rem; cursor: pointer; text-decoration: underline;
+    }
+    .modal-success { display: none; }
+    .modal-success .success-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .modal-success h3 { margin-bottom: 8px; }
+
+    .hat-error { font-size: 0.78rem; color: var(--danger); text-align: center; margin-bottom: 20px; display: none; }
+
+    /* Order summary */
+    .order-summary {
+      background: var(--white); border: 1px solid #D5D0C8; border-radius: 5px;
+      padding: 12px 16px; margin-bottom: 28px; display: none;
+    }
+    .order-summary-row { display: flex; justify-content: space-between; font-size: 0.88rem; color: var(--navy); padding: 3px 0; }
+    .order-summary-total {
+      display: flex; justify-content: space-between;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 700;
+      color: var(--navy); border-top: 1px solid #D5D0C8; margin-top: 8px; padding-top: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    /* FORM FIELDS */
+    .field-group { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    label { font-size: 0.82rem; font-weight: 600; color: var(--navy); letter-spacing: 0.02em; }
+    input[type="text"], input[type="tel"] {
+      width: 100%; padding: 12px 14px; border: 2px solid #D5D0C8; border-radius: 5px;
+      font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--navy);
+      background: var(--white); transition: border-color 0.15s; -webkit-appearance: none;
+    }
+    input[type="text"]:focus, input[type="tel"]:focus { outline: none; border-color: var(--sand); }
+    input::placeholder { color: #B0A99E; }
+    textarea {
+      width: 100%; padding: 12px 14px; border: 2px solid #D5D0C8; border-radius: 5px;
+      font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--navy);
+      background: var(--white); resize: vertical; min-height: 80px; transition: border-color 0.15s;
+    }
+    textarea:focus { outline: none; border-color: var(--sand); }
+
+    /* SUBMIT */
+    .submit-wrap { margin-top: 8px; }
+    button[type="submit"] {
+      width: 100%; padding: 16px; background: var(--navy); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem;
+      letter-spacing: 0.12em; text-transform: uppercase; border: none; border-radius: 5px;
+      cursor: pointer; transition: background 0.15s, transform 0.1s; border-bottom: 3px solid var(--sand);
+    }
+    button[type="submit"]:hover { background: var(--steel); }
+    button[type="submit"]:active { transform: scale(0.99); }
+    .form-note { text-align: center; font-size: 0.78rem; color: var(--smoke); margin-top: 12px; line-height: 1.5; }
+
+    /* ERRORS */
+    .error-msg { font-size: 0.78rem; color: var(--danger); margin-top: 4px; display: none; }
+    .field.has-error input, .field.has-error textarea { border-color: var(--danger); }
+    .field.has-error .error-msg { display: block; }
+
+    /* SUCCESS */
+    #success-screen { display: none; text-align: center; padding: 60px 24px; }
+    .success-icon { font-size: 3rem; margin-bottom: 20px; }
+    #success-screen h2 {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 2rem;
+      text-transform: uppercase; color: var(--navy); margin-bottom: 12px; letter-spacing: 0.04em;
+    }
+    #success-screen p { color: var(--smoke); line-height: 1.7; font-size: 0.95rem; max-width: 360px; margin: 0 auto 24px; }
+    .venmo-btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px;
+      background: #3D95CE; color: var(--white); font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; border-radius: 5px; transition: opacity 0.15s;
+    }
+    .venmo-btn:hover { opacity: 0.88; }
+    .venmo-note { font-size: 0.78rem; color: var(--smoke); margin-top: 10px; }
+
+    /* FOOTER */
+    footer { text-align: center; padding: 24px; font-size: 0.75rem; color: var(--smoke); border-top: 1px solid #D5D0C8; }
+
+    @media (max-width: 400px) { .hat-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-text">Station 7's <span>Gearlocker</span></div>
+    <div class="badge">Camp Pendleton</div>
+  </header>
+
+  <div class="hero">
+    <h1>🔥 FIRE <em>SALE</em> 🔥</h1>
+    <p class="hero-sub">Unofficially the Department's Official Hat. And it's MI-109 Compliant, we checked 👀</p>
+  </div>
+
+  <div class="inventory-strip">
+    <div class="inv-card">
+      <div class="inv-label">Navy Blue</div>
+      <div class="inv-count" id="inv-navy">–</div>
+      <div class="inv-style">One Size</div>
+    </div>
+    <div class="inv-card">
+      <div class="inv-label">Camo</div>
+      <div class="inv-count" id="inv-camo">–</div>
+      <div class="inv-style">One Size</div>
+    </div>
+    <div class="inv-card">
+      <div class="inv-label">Melin Style</div>
+      <div class="inv-count" style="font-size:1rem; padding-top:6px; color: var(--smoke);">Coming Soon</div>
+      <div class="inv-style">New Drop</div>
+    </div>
+  </div>
+
+  <main>
+    <div id="order-form-wrap">
+
+      <div class="section-label">Choose your hats</div>
+      <div class="hat-grid">
+
+        <div class="hat-card" id="card-navy">
+          <div class="hat-icon">🧢</div>
+          <div class="hat-swatch" style="background:#1a3a6b;"></div>
+          <div class="hat-name">Navy Blue</div>
+          <div class="hat-price">$22 · One Size</div>
+          <div class="qty-stepper" id="stepper-navy">
+            <button class="qty-btn" onclick="changeQty('navy', -1)">−</button>
+            <div class="qty-display" id="qty-navy">0</div>
+            <button class="qty-btn" onclick="changeQty('navy', 1)">+</button>
+          </div>
+          <button class="notify-btn" id="notify-navy" onclick="openWaitlist('Navy Blue')" style="display:none;">🔔 Notify Me</button>
+        </div>
+
+        <div class="hat-card" id="card-camo">
+          <div class="hat-icon">🧢</div>
+          <div class="hat-swatch" style="background: repeating-linear-gradient(45deg,#4a5240 0,#4a5240 4px,#6b7a5a 4px,#6b7a5a 8px,#3a4530 8px,#3a4530 12px);"></div>
+          <div class="hat-name">Camo</div>
+          <div class="hat-price">$22 · One Size</div>
+          <div class="qty-stepper" id="stepper-camo">
+            <button class="qty-btn" onclick="changeQty('camo', -1)">−</button>
+            <div class="qty-display" id="qty-camo">0</div>
+            <button class="qty-btn" onclick="changeQty('camo', 1)">+</button>
+          </div>
+          <button class="notify-btn" id="notify-camo" onclick="openWaitlist('Camo')" style="display:none;">🔔 Notify Me</button>
+        </div>
+
+      </div>
+      <div class="hat-error" id="hat-error">Select at least one hat to continue.</div>
+
+      <div class="order-summary" id="order-summary">
+        <div id="summary-rows"></div>
+        <div class="order-summary-total">
+          <span>Total</span>
+          <span id="summary-total">$0</span>
+        </div>
+      </div>
+
+      <div id="order-fields-wrap">
+        <div class="section-label">Your info</div>
+        <div class="field-group">
+          <div class="field" id="field-firstname">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="First" autocomplete="given-name" />
+            <span class="error-msg">First name is required.</span>
+          </div>
+          <div class="field" id="field-lastname">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Last" autocomplete="family-name" />
+            <span class="error-msg">Last name is required.</span>
+          </div>
+          <div class="field" id="field-phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(760) 555-0100" autocomplete="tel" />
+            <span class="error-msg">A valid phone number is required.</span>
+          </div>
+          <div class="field" id="field-notes">
+            <label for="notes">Notes <span style="font-weight:400;color:var(--smoke);">(optional)</span></label>
+            <textarea id="notes" placeholder="Anything we should know — shift, station…"></textarea>
+          </div>
+        </div>
+        <div class="submit-wrap">
+          <button type="submit" id="submit-btn" onclick="submitOrder()">Place Order</button>
+          <p class="form-note">You'll get a text confirmation. Payment via Venmo.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="success-screen">
+      <div class="success-icon">🤙</div>
+      <h2>Order Received</h2>
+      <p id="success-msg"></p>
+      <a class="venmo-btn" id="venmo-link" href="https://venmo.com/u/Akleinschmidt" target="_blank" rel="noopener">
+        Pay via Venmo
+      </a>
+      <p class="venmo-note">Memo: number of hats + colors (ex: 2 Blue, 1 Camo)</p>
+    </div>
+  </main>
+
+  <footer>Station 7's Gearlocker · Camp Pendleton · All sales support the station chow fund</footer>
+
+  <!-- WAITLIST MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <div id="modal-form-content">
+        <h3>Notify Me</h3>
+        <p>We'll text you the second this hat is back in stock.</p>
+        <div class="modal-hat-label" id="modal-hat-label"></div>
+        <input type="text" id="waitlist-name" placeholder="Your Name" />
+        <input type="tel" id="waitlist-phone" placeholder="Phone Number" />
+        <button class="modal-submit" onclick="submitWaitlist()">Put Me on the List</button>
+        <button class="modal-cancel" onclick="closeWaitlist()">Never mind</button>
+      </div>
+      <div class="modal-success" id="modal-success">
+        <div class="success-icon">👊</div>
+        <h3>You're on the list</h3>
+        <p style="color:var(--smoke); font-size:0.88rem; margin-top:8px;">We'll text you when it's back. Stay frosty.</p>
+        <button class="modal-cancel" onclick="closeWaitlist()" style="margin-top:16px;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ── INVENTORY — update these numbers each batch ──
+    const INVENTORY = { navy: 30, camo: 30 };
+    const qty = { navy: 0, camo: 0 };
+    const PRICE = 22;
+    let waitlistHat = '';
+
+    // Render inventory + sold out state
+    function initInventory() {
+      ['navy', 'camo'].forEach(style => {
+        const count = INVENTORY[style];
+        const countEl = document.getElementById('inv-' + style);
+        const card = document.getElementById('card-' + style);
+        const stepper = document.getElementById('stepper-' + style);
+        const notifyBtn = document.getElementById('notify-' + style);
+
+        if (count === 0) {
+          countEl.textContent = 'Out';
+          countEl.style.fontSize = '1rem';
+          countEl.style.color = 'var(--smoke)';
+          card.classList.add('sold-out');
+          // Add sold out badge
+          const badge = document.createElement('div');
+          badge.className = 'sold-out-badge';
+          badge.textContent = 'Sold Out';
+          card.appendChild(badge);
+          stepper.style.display = 'none';
+          notifyBtn.style.display = 'block';
+        } else {
+          countEl.textContent = count;
+        }
+      });
+
+      // If ALL hats sold out, hide the order form fields
+      if (INVENTORY.navy === 0 && INVENTORY.camo === 0) {
+        document.getElementById('order-fields-wrap').style.display = 'none';
+        document.getElementById('hat-error').style.display = 'none';
+      }
+    }
+
+    function changeQty(style, delta) {
+      const max = INVENTORY[style];
+      qty[style] = Math.max(0, Math.min(qty[style] + delta, max));
+      document.getElementById('qty-' + style).textContent = qty[style];
+      document.getElementById('card-' + style).classList.toggle('has-qty', qty[style] > 0);
+      updateSummary();
+    }
+
+    function updateSummary() {
+      const total = (qty.navy + qty.camo) * PRICE;
+      const summaryEl = document.getElementById('order-summary');
+      const rowsEl = document.getElementById('summary-rows');
+      const submitBtn = document.getElementById('submit-btn');
+      if (total === 0) { summaryEl.style.display = 'none'; submitBtn.textContent = 'Place Order'; return; }
+      summaryEl.style.display = 'block';
+      let rows = '';
+      if (qty.navy > 0) rows += `<div class="order-summary-row"><span>Navy Blue × ${qty.navy}</span><span>$${qty.navy * PRICE}</span></div>`;
+      if (qty.camo > 0) rows += `<div class="order-summary-row"><span>Camo × ${qty.camo}</span><span>$${qty.camo * PRICE}</span></div>`;
+      rowsEl.innerHTML = rows;
+      document.getElementById('summary-total').textContent = '$' + total;
+      submitBtn.textContent = 'Place Order — $' + total;
+    }
+
+    function submitOrder() {
+      let valid = true;
+      const hatError = document.getElementById('hat-error');
+      if (qty.navy === 0 && qty.camo === 0) { hatError.style.display = 'block'; valid = false; }
+      else hatError.style.display = 'none';
+
+      const firstNameField = document.getElementById('field-firstname');
+      const firstNameVal = document.getElementById('firstname').value.trim();
+      if (!firstNameVal) { firstNameField.classList.add('has-error'); valid = false; }
+      else firstNameField.classList.remove('has-error');
+
+      const lastNameField = document.getElementById('field-lastname');
+      const lastNameVal = document.getElementById('lastname').value.trim();
+      if (!lastNameVal) { lastNameField.classList.add('has-error'); valid = false; }
+      else lastNameField.classList.remove('has-error');
+
+      const phoneField = document.getElementById('field-phone');
+      const phoneVal = document.getElementById('phone').value.replace(/\D/g,'');
+      if (phoneVal.length < 10) { phoneField.classList.add('has-error'); valid = false; }
+      else phoneField.classList.remove('has-error');
+
+      if (!valid) return;
+
+      const total = (qty.navy + qty.camo) * PRICE;
+      let orderDesc = [];
+      if (qty.navy > 0) orderDesc.push(`${qty.navy} Navy Blue`);
+      if (qty.camo > 0) orderDesc.push(`${qty.camo} Camo`);
+
+      const payload = {
+        first_name: firstNameVal,
+        last_name: lastNameVal,
+        name: firstNameVal + ' ' + lastNameVal,
+        phone: document.getElementById('phone').value.trim(),
+        navy_qty: qty.navy,
+        camo_qty: qty.camo,
+        order_summary: orderDesc.join(' + '),
+        total: '$' + total,
+        notes: document.getElementById('notes').value.trim(),
+        tags: 'gearlocker-customer'
+      };
+
+      fetch('https://services.leadconnectorhq.com/hooks/jKGpFWDDjTJ7Pyb1cHJE/webhook-trigger/9637d86a-28f8-4abe-beb7-74cf5be7c69f', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(() => {});
+
+      document.getElementById('success-msg').textContent =
+        `Order placed for ${orderDesc.join(' + ')} (${orderDesc.length > 1 ? qty.navy + qty.camo + ' hats' : '1 hat'} · $${total}), ${nameVal}. We'll text you at ${document.getElementById('phone').value.trim()} to confirm.`;
+      document.getElementById('venmo-link').textContent = `Pay $${total} on Venmo`;
+      document.getElementById('order-form-wrap').style.display = 'none';
+      document.getElementById('success-screen').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // WAITLIST
+    function openWaitlist(hatName) {
+      waitlistHat = hatName;
+      document.getElementById('modal-hat-label').textContent = hatName;
+      document.getElementById('modal-form-content').style.display = 'block';
+      document.getElementById('modal-success').style.display = 'none';
+      document.getElementById('modal-overlay').classList.add('open');
+    }
+
+    function closeWaitlist() {
+      document.getElementById('modal-overlay').classList.remove('open');
+      document.getElementById('waitlist-name').value = '';
+      document.getElementById('waitlist-phone').value = '';
+    }
+
+    function submitWaitlist() {
+      const name = document.getElementById('waitlist-name').value.trim();
+      const phone = document.getElementById('waitlist-phone').value.replace(/\D/g,'');
+      if (!name || phone.length < 10) { alert('Please enter your name and phone number.'); return; }
+
+      const tag = waitlistHat === 'Navy Blue' ? 'gearlocker-waitlist-navy' : 'gearlocker-waitlist-camo';
+
+      fetch('https://services.leadconnectorhq.com/hooks/jKGpFWDDjTJ7Pyb1cHJE/webhook-trigger/dcd171c0-93c7-4cdc-a38b-138d5d1600d8', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name,
+          phone: document.getElementById('waitlist-phone').value.trim(),
+          tags: tag,
+          order_summary: 'Waitlist - ' + waitlistHat,
+          total: '$0',
+          notes: 'Waitlist signup'
+        })
+      }).catch(() => {});
+
+      document.getElementById('modal-form-content').style.display = 'none';
+      document.getElementById('modal-success').style.display = 'block';
+    }
+
+    initInventory();
+  </script>
+
+</body>
+</html>
