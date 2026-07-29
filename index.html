@@ -337,10 +337,15 @@
       <div id="order-fields-wrap">
         <div class="section-label">Your info</div>
         <div class="field-group">
-          <div class="field" id="field-name">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="First Last" autocomplete="name" />
-            <span class="error-msg">Name is required.</span>
+          <div class="field" id="field-firstname">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="First" autocomplete="given-name" />
+            <span class="error-msg">First name is required.</span>
+          </div>
+          <div class="field" id="field-lastname">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Last" autocomplete="family-name" />
+            <span class="error-msg">Last name is required.</span>
           </div>
           <div class="field" id="field-phone">
             <label for="phone">Phone Number</label>
@@ -463,10 +468,15 @@
       if (qty.navy === 0 && qty.camo === 0) { hatError.style.display = 'block'; valid = false; }
       else hatError.style.display = 'none';
 
-      const nameField = document.getElementById('field-name');
-      const nameVal = document.getElementById('name').value.trim();
-      if (!nameVal) { nameField.classList.add('has-error'); valid = false; }
-      else nameField.classList.remove('has-error');
+      const firstNameField = document.getElementById('field-firstname');
+      const firstNameVal = document.getElementById('firstname').value.trim();
+      if (!firstNameVal) { firstNameField.classList.add('has-error'); valid = false; }
+      else firstNameField.classList.remove('has-error');
+
+      const lastNameField = document.getElementById('field-lastname');
+      const lastNameVal = document.getElementById('lastname').value.trim();
+      if (!lastNameVal) { lastNameField.classList.add('has-error'); valid = false; }
+      else lastNameField.classList.remove('has-error');
 
       const phoneField = document.getElementById('field-phone');
       const phoneVal = document.getElementById('phone').value.replace(/\D/g,'');
@@ -481,7 +491,9 @@
       if (qty.camo > 0) orderDesc.push(`${qty.camo} Camo`);
 
       const payload = {
-        name: nameVal,
+        first_name: firstNameVal,
+        last_name: lastNameVal,
+        name: firstNameVal + ' ' + lastNameVal,
         phone: document.getElementById('phone').value.trim(),
         navy_qty: qty.navy,
         camo_qty: qty.camo,
